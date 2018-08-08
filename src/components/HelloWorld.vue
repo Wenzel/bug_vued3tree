@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <tree :data="tree" :node-text="name" layoutType="circular" class="tree">
+  <div id="container">
+    <tree :data="tree" node-text="name" layoutType="circular" class="tree">
     </tree>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       tree: {
-        name: "father",
+        name: "/",
         children:[{
           name: "son1",
           children:[ {name: "grandson"}, {name: "grandson2"}]
@@ -30,8 +30,14 @@ export default {
 </script>
 
 <style>
+
 .tree {
   width: 100%;
   height: 100%;
+}
+
+#container{
+    width: 500px;
+    height: 500px;;
 }
 </style>
