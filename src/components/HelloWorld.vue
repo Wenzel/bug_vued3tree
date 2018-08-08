@@ -1,6 +1,6 @@
 <template>
-  <div id="vued3tree">
-    <tree :data="tree" :node-text="name" layoutType="circular">
+  <div>
+    <tree :data="tree" :node-text="name" layoutType="circular" class="tree">
     </tree>
   </div>
 </template>
@@ -30,8 +30,8 @@ export default {
 </script>
 
 <style>
-#vued3tree {
-  height: 600px;
+.tree {
   width: 100%;
+  height: 100%;
 }
 </style>
